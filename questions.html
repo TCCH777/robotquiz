@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TuRobot</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="caja.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!-- Fondo y decoraciones -->
+      <img src="./images/Fondo.png" alt="Fondo" class="background" />
+      <img
+        src="./images/tuerca.png"
+        alt="Decoración derecha inferior"
+        class="nuts"
+      />
+      <img
+        src="./images/destornilladores.png"
+        alt="Decoración izquierda inferior"
+        class="screws"
+      />
+      <img src="./images/inglesa.png" alt="Llave Inglesa" class="wrench" />
+
+      <!-- Contenedor principal de la pregunta -->
+      <section class="question-container">
+        <img
+          src="./images/marco pregunta.png"
+          alt="Marco de Pregunta"
+          class="question-frame"
+        />
+
+        <!-- Pregunta 1: ¿Por qué quieres un robot? -->
+        <div class="question active" id="question1">
+          <div class="text-inside-frame">
+            <p>¿Por qué quieres un robot?</p>
+          </div>
+          <div class="content-div left-div" onclick="nextQuestion(1)">
+            <p>Moda</p>
+            <img
+              src="images/marco selecion grande.png"
+              alt="Imagen Lado Izquierdo Arriba"
+              class="side-image"
+            />
+          </div>
+          <div class="content-div right-div" onclick="nextQuestion(1)">
+            <p>Por que no</p>
+            <img
+              src="images/marco selecion grande.png"
+              alt="Imagen Lado Izquierdo Abajo"
+              class="side-image"
+            />
+          </div>
+          <div class="content-div left-div" onclick="nextQuestion(1)">
+            <p>Aguanta</p>
+            <img
+              src="images/marco selecion grande.png"
+              alt="Imagen Lado Derecho Arriba"
+              class="side-image"
+            />
+          </div>
+          <div class="content-div right-div" onclick="nextQuestion(1)">
+            <p>Ser parte del futuro</p>
+            <img
+              src="images/marco selecion grande.png"
+              alt="Imagen Lado Derecho Abajo"
+              class="side-image"
+            />
+          </div>
+        </div>
+
+        <!-- Pregunta 2: ¿Qué uso le darás a tu robot? -->
+        <div class="question" id="question2" style="display: none">
+          <div class="text-inside-frame">
+            <p>¿Qué uso le darás a tu robot?</p>
+          </div>
+          <div class="content-div left-div-up" onclick="nextQuestion(2)">
+            <p>Asistente</p>
+            <img
+              src="images/marco selecion grande.png"
+              alt="Imagen Lado Izquierdo Arriba"
+              class="side-image"
+            />
+          </div>
+          <div class="content-div left-div-down" onclick="nextQuestion(2)">
+            <p>Arma de guerra</p>
+            <img
+              src="images/marco selecion grande.png"
+              alt="Imagen Lado Izquierdo Abajo"
+              class="side-image"
+            />
+          </div>
+          <div class="content-div right-div" onclick="nextQuestion(2)">
+            <p>Un amigo</p>
+            <img
+              src="images/marco selecion grande.png"
+              alt="Imagen Lado Derecho Arriba"
+              class="side-image"
+            />
+          </div>
+          <div class="content-div right-div-up" onclick="nextQuestion(2)">
+            <p>Adorno</p>
+            <img
+              src="images/marco selecion grande.png"
+              alt="Imagen Lado Derecho Abajo"
+              class="side-image"
+            />
+          </div>
+        </div>
+
+        <!-- Pregunta 3: Tamaño del robot -->
+        <div class="question" id="question3" style="display: none">
+          <div class="text-inside-frame">
+            <p>Tamaño del robot?</p>
+          </div>
+          <div class="content-div left-div" onclick="nextQuestion(3)">
+            <p>Grande</p>
+            <img
+              src="images/marco selecion pequeño.png"
+              alt="Imagen Lado Izquierdo"
+              class="side-image"
+            />
+          </div>
+          <div class="content-div right-div" onclick="nextQuestion(3)">
+            <p>Pequeño</p>
+            <img
+              src="images/marco selecion pequeño.png"
+              alt="Imagen Lado Derecho"
+              class="side-image"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

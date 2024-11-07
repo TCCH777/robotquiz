@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Fondo de seguridad */
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Fondo de la página */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Decoración del lado derecho inferior (tuercas) */
+.nuts {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 100px; /* Ajustar el tamaño según la imagen de referencia */
+  height: auto;
+  z-index: 1;
+}
+
+/* Decoración del lado izquierdo inferior (destornilladores) */
+.screws {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 120px; /* Ajustar el tamaño según la imagen de referencia */
+  height: auto;
+  z-index: 1;
+}
+
+/* Contenedor de la pregunta */
+.question-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  width: 720px;
+  height: 390px;
+}
+
+/* Marco central para la pregunta */
+.question-frame {
+  width: 80%; /* Ajustar según el diseño */
+  max-width: 600px;
+  height: auto;
+}
+
+/* Texto encima del marco de la pregunta */
+.question-container h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #ffff00; /* Color amarillo */
+  font-weight: bold;
+  z-index: 3;
+}
+
+/* Llave inglesa en la parte superior derecha */
+.wrench {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 150px; /* Ajustar el tamaño según la imagen de referencia */
+  height: auto;
+  z-index: 2;
+}
+
+.content-div {
+  padding: 1%;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  margin: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 37%;
+  cursor: pointer;
+}
+
+.content-div:hover {
+  background-color: white;
+}
+
+/* Posicionamiento del contenedor izquierdo y derecho */
+.left-div {
+  left: 30%; /* Ajusta la posición a la izquierda */
+}
+
+.right-div {
+  right: 30%; /* Ajusta la posición a la derecha */
+}
+
+/* Estilos para el texto "Hola" */
+.content-div p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  color: #ffffff; /* Color de texto blanco */
+  font-weight: bold;
+  z-index: 2;
+  margin: 0;
+}
+
+/* Estilos para las imágenes */
+.side-image {
+  width: 120px; /* Ajusta el tamaño según el diseño */
+  height: auto;
+  margin-top: 5px;
+  border-radius: 8px;
+}
+
+.text-inside-frame {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 100;
+  width: 50%; /* Ajusta el ancho según el marco */
+}
