@@ -187,3 +187,85 @@ main {
 #answer-img {
   width: 100%;
 }
+
+@media screen and (max-width: 480px) {
+  .background {
+    width: 100%; /* Asegura que el fondo ocupe todo el ancho en móviles */
+    height: 1000px;
+  }
+
+  .question-frame {
+    width: 50%; /* Reduce el tamaño del marco de la pregunta */
+  }
+
+  .question {
+    padding: 5px; /* Agrega más espacio alrededor de las preguntas */
+  }
+
+  .content-div {
+    width: 75%; /* Acomoda las opciones para que se vean bien en móvil */
+    margin: 3.5px 0;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .content-div img {
+    width: 120px;
+  }
+
+  .content-div p {
+    font-size: 12px; /* Ajusta el tamaño de la fuente para que no quede muy grande */
+  }
+
+  .side-image {
+    width: 40%; /* Reduce el tamaño de las imágenes dentro de las opciones */
+  }
+
+  #answer-container {
+    position: absolute;
+    z-index: 99;
+    width: 300px;
+    height: 200px;
+    display: none;
+  }
+
+  .text-inside-frame {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 50;
+    width: 50%;
+  }
+
+  .text-inside-frame p {
+    font-size: 15px;
+  }
+
+  .content-div.left-top {
+    position: absolute;
+    top: 40%;
+    left: -5%;
+  }
+
+  .content-div.left-bottom {
+    position: absolute;
+    top: 60%;
+    left: -5%;
+  }
+
+  .content-div.right-top {
+    position: absolute;
+    top: 40%;
+    right: -5%;
+  }
+
+  .content-div.right-bottom {
+    position: absolute;
+    top: 60%;
+    right: -5%;
+  }
+}
